@@ -1,0 +1,27 @@
+#include <stdio.h>
+double subtract(double num1, double num2) {
+    return num1 - num2;
+}
+int main() {
+    double num1, num2;
+    int choice;
+    double result;
+    printf("Simple Calculator Program in C\n");
+    printf("-------------------------------\n");
+    printf("Enter first number: ");
+    scanf("%lf", &num1);
+    printf("Enter second number: ");
+    scanf("%lf", &num2);
+    printf("Choose an operation:\n");
+    printf("2. Subtraction\n");
+    printf("Enter your choice (1-4): ");
+    scanf("%d", &choice);
+        case 2:
+            result = subtract(num1, num2);
+            printf("%.2lf - %.2lf = %.2lf\n", num1, num2, result);
+            break;
+        
+    }
+
+    return 0;
+}
